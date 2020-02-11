@@ -1,0 +1,7 @@
+sv xil_defaultlib "D:/shuziluoji/vivado/Vivado/2016.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" --include "../../../ipstatic/clk_wiz_v5_3_1"
+verilog xil_defaultlib "../../../../FPGA-cameral.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v" --include "../../../ipstatic/clk_wiz_v5_3_1"
+verilog xil_defaultlib "../../../../FPGA-cameral.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v" --include "../../../ipstatic/clk_wiz_v5_3_1"
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

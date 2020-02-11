@@ -1,0 +1,65 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
+| Date         : Tue Feb 11 15:46:18 2020
+| Host         : DESKTOP-R5H3E9D running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file camera_top_control_sets_placed.rpt
+| Design       : camera_top
+| Device       : xc7a100t
+---------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    12 |
+| Unused register locations in slices containing registers |    52 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              18 |            8 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              53 |           18 |
+| Yes          | No                    | No                     |              48 |           15 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              61 |           17 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++--------------------+---------------------------+-------------------------------+------------------+----------------+
+|    Clock Signal    |       Enable Signal       |        Set/Reset Signal       | Slice Load Count | Bel Load Count |
++--------------------+---------------------------+-------------------------------+------------------+----------------+
+|  div/inst/clk_out2 | init/sender/sio_c_i_2_n_0 | init/sender/sio_c             |                1 |              1 |
+|  div/inst/clk_out2 |                           |                               |                4 |              6 |
+|  div/inst/clk_out2 | init/sender/data_temp0    | rst_IBUF                      |                4 |             10 |
+|  vga/control/E[0]  |                           |                               |                4 |             12 |
+|  div/inst/clk_out1 |                           | rst_IBUF                      |                7 |             12 |
+|  div/inst/clk_out1 | vga/control/y_poi_0       | rst_IBUF                      |                2 |             12 |
+|  pclk_IBUF_BUFG    | get_pic/sel               | get_pic/clear                 |                5 |             19 |
+|  div/inst/clk_out2 | init/sender/E[0]          | rst_IBUF                      |                5 |             19 |
+|  div/inst/clk_out2 |                           | init/sender/count[20]_i_1_n_0 |                5 |             20 |
+|  div/inst/clk_out2 | init/sender/data_temp0    |                               |                4 |             20 |
+|  pclk_IBUF_BUFG    |                           | get_pic/clear                 |                6 |             21 |
+|  pclk_IBUF_BUFG    | vsync_IBUF                |                               |               11 |             28 |
++--------------------+---------------------------+-------------------------------+------------------+----------------+
+
+

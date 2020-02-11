@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Tue Feb 11 15:41:16 2020
+# Process ID: 8036
+# Current directory: D:/shuziluoji/bhw/work/FPGA-cameral/FPGA-cameral.runs/blk_mem_gen_0_synth_1
+# Command line: vivado.exe -log blk_mem_gen_0.vds -mode batch -messageDb vivado.pb -notrace -source blk_mem_gen_0.tcl
+# Log file: D:/shuziluoji/bhw/work/FPGA-cameral/FPGA-cameral.runs/blk_mem_gen_0_synth_1/blk_mem_gen_0.vds
+# Journal file: D:/shuziluoji/bhw/work/FPGA-cameral/FPGA-cameral.runs/blk_mem_gen_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source blk_mem_gen_0.tcl -notrace

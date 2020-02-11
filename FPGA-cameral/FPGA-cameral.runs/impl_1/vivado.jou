@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Tue Feb 11 15:45:32 2020
+# Process ID: 7144
+# Current directory: D:/shuziluoji/bhw/work/FPGA-cameral/FPGA-cameral.runs/impl_1
+# Command line: vivado.exe -log camera_top.vdi -applog -messageDb vivado.pb -mode batch -source camera_top.tcl -notrace
+# Log file: D:/shuziluoji/bhw/work/FPGA-cameral/FPGA-cameral.runs/impl_1/camera_top.vdi
+# Journal file: D:/shuziluoji/bhw/work/FPGA-cameral/FPGA-cameral.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source camera_top.tcl -notrace
