@@ -2,8 +2,8 @@
 # Vivado v2016.2 (64-bit)
 # SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
 # IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
-# Start of session at: Tue Feb 11 15:44:36 2020
-# Process ID: 13704
+# Start of session at: Sun Dec 13 20:27:19 2020
+# Process ID: 20220
 # Current directory: D:/shuziluoji/bhw/work/FPGA-cameral/FPGA-cameral.runs/synth_1
 # Command line: vivado.exe -log camera_top.vds -mode batch -messageDb vivado.pb -notrace -source camera_top.tcl
 # Log file: D:/shuziluoji/bhw/work/FPGA-cameral/FPGA-cameral.runs/synth_1/camera_top.vds
@@ -15,28 +15,33 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 9712 
+INFO: Helper process launched with PID 18936 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 305.379 ; gain = 98.051
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:13 . Memory (MB): peak = 305.820 ; gain = 98.340
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'camera_top' [D:/shuziluoji/bhw/work/code/camera_top.v:1]
-INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [D:/shuziluoji/bhw/work/FPGA-cameral/FPGA-cameral.runs/synth_1/.Xil/Vivado-13704-DESKTOP-R5H3E9D/realtime/clk_wiz_0_stub.v:5]
-INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0' (1#1) [D:/shuziluoji/bhw/work/FPGA-cameral/FPGA-cameral.runs/synth_1/.Xil/Vivado-13704-DESKTOP-R5H3E9D/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-638] synthesizing module 'bluetooth' [D:/shuziluoji/bhw/work/code/bluetooth.v:1]
+	Parameter bps bound to: 10417 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'bluetooth' (1#1) [D:/shuziluoji/bhw/work/code/bluetooth.v:1]
+INFO: [Synth 8-638] synthesizing module 'display7' [D:/shuziluoji/bhw/work/code/display7.v:1]
+INFO: [Synth 8-256] done synthesizing module 'display7' (2#1) [D:/shuziluoji/bhw/work/code/display7.v:1]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [D:/shuziluoji/bhw/work/FPGA-cameral/FPGA-cameral.runs/synth_1/.Xil/Vivado-20220-DESKTOP-R5H3E9D/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0' (3#1) [D:/shuziluoji/bhw/work/FPGA-cameral/FPGA-cameral.runs/synth_1/.Xil/Vivado-20220-DESKTOP-R5H3E9D/realtime/clk_wiz_0_stub.v:5]
 INFO: [Synth 8-638] synthesizing module 'camera_init' [D:/shuziluoji/bhw/work/code/camera_init.v:1]
 WARNING: [Synth 8-2898] ignoring pullup [D:/shuziluoji/bhw/work/code/camera_init.v:14]
 INFO: [Synth 8-638] synthesizing module 'reg_init' [D:/shuziluoji/bhw/work/code/reg_init.v:1]
 	Parameter num_reg bound to: 176 - type: integer 
 INFO: [Synth 8-155] case statement is not full and has no default [D:/shuziluoji/bhw/work/code/reg_init.v:22]
-INFO: [Synth 8-256] done synthesizing module 'reg_init' (2#1) [D:/shuziluoji/bhw/work/code/reg_init.v:1]
+INFO: [Synth 8-256] done synthesizing module 'reg_init' (4#1) [D:/shuziluoji/bhw/work/code/reg_init.v:1]
 INFO: [Synth 8-638] synthesizing module 'sccb_sender' [D:/shuziluoji/bhw/work/code/sccb_sender.v:1]
-INFO: [Synth 8-256] done synthesizing module 'sccb_sender' (3#1) [D:/shuziluoji/bhw/work/code/sccb_sender.v:1]
-INFO: [Synth 8-256] done synthesizing module 'camera_init' (4#1) [D:/shuziluoji/bhw/work/code/camera_init.v:1]
+INFO: [Synth 8-256] done synthesizing module 'sccb_sender' (5#1) [D:/shuziluoji/bhw/work/code/sccb_sender.v:1]
+INFO: [Synth 8-256] done synthesizing module 'camera_init' (6#1) [D:/shuziluoji/bhw/work/code/camera_init.v:1]
 INFO: [Synth 8-638] synthesizing module 'camera_get_pic' [D:/shuziluoji/bhw/work/code/camera_get_pic.v:1]
-INFO: [Synth 8-256] done synthesizing module 'camera_get_pic' (5#1) [D:/shuziluoji/bhw/work/code/camera_get_pic.v:1]
-INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_0' [D:/shuziluoji/bhw/work/FPGA-cameral/FPGA-cameral.runs/synth_1/.Xil/Vivado-13704-DESKTOP-R5H3E9D/realtime/blk_mem_gen_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_0' (6#1) [D:/shuziluoji/bhw/work/FPGA-cameral/FPGA-cameral.runs/synth_1/.Xil/Vivado-13704-DESKTOP-R5H3E9D/realtime/blk_mem_gen_0_stub.v:6]
-WARNING: [Synth 8-689] width (12) of port connection 'addrb' does not match port width (19) of module 'blk_mem_gen_0' [D:/shuziluoji/bhw/work/code/camera_top.v:34]
-WARNING: [Synth 8-689] width (19) of port connection 'doutb' does not match port width (12) of module 'blk_mem_gen_0' [D:/shuziluoji/bhw/work/code/camera_top.v:34]
+INFO: [Synth 8-256] done synthesizing module 'camera_get_pic' (7#1) [D:/shuziluoji/bhw/work/code/camera_get_pic.v:1]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_0' [D:/shuziluoji/bhw/work/FPGA-cameral/FPGA-cameral.runs/synth_1/.Xil/Vivado-20220-DESKTOP-R5H3E9D/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_0' (8#1) [D:/shuziluoji/bhw/work/FPGA-cameral/FPGA-cameral.runs/synth_1/.Xil/Vivado-20220-DESKTOP-R5H3E9D/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'deal_pic' [D:/shuziluoji/bhw/work/code/deal_pic.v:1]
+INFO: [Synth 8-256] done synthesizing module 'deal_pic' (9#1) [D:/shuziluoji/bhw/work/code/deal_pic.v:1]
 INFO: [Synth 8-638] synthesizing module 'vga_display' [D:/shuziluoji/bhw/work/code/vga_display.v:1]
 	Parameter x_before bound to: 11'b00010010000 
 	Parameter y_before bound to: 11'b00000100011 
@@ -51,14 +56,13 @@ INFO: [Synth 8-638] synthesizing module 'vga_control' [D:/shuziluoji/bhw/work/co
 	Parameter y_before bound to: 11'b00000100011 
 	Parameter y_beside_after bound to: 11'b01000000011 
 	Parameter y_all bound to: 11'b01000001101 
-INFO: [Synth 8-256] done synthesizing module 'vga_control' (7#1) [D:/shuziluoji/bhw/work/code/vga_control.v:2]
-INFO: [Synth 8-256] done synthesizing module 'vga_display' (8#1) [D:/shuziluoji/bhw/work/code/vga_display.v:1]
-WARNING: [Synth 8-689] width (19) of port connection 'color_data_in' does not match port width (12) of module 'vga_display' [D:/shuziluoji/bhw/work/code/camera_top.v:35]
-WARNING: [Synth 8-689] width (12) of port connection 'ram_addr' does not match port width (19) of module 'vga_display' [D:/shuziluoji/bhw/work/code/camera_top.v:35]
-INFO: [Synth 8-256] done synthesizing module 'camera_top' (9#1) [D:/shuziluoji/bhw/work/code/camera_top.v:1]
+INFO: [Synth 8-256] done synthesizing module 'vga_control' (10#1) [D:/shuziluoji/bhw/work/code/vga_control.v:2]
+INFO: [Synth 8-256] done synthesizing module 'vga_display' (11#1) [D:/shuziluoji/bhw/work/code/vga_display.v:1]
+INFO: [Synth 8-256] done synthesizing module 'camera_top' (12#1) [D:/shuziluoji/bhw/work/code/camera_top.v:1]
+WARNING: [Synth 8-3331] design deal_pic has unconnected port clk
 WARNING: [Synth 8-3331] design camera_get_pic has unconnected port rst
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 341.840 ; gain = 134.512
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:15 . Memory (MB): peak = 343.250 ; gain = 135.770
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -68,19 +72,19 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 341.840 ; gain = 134.512
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:15 . Memory (MB): peak = 343.250 ; gain = 135.770
 ---------------------------------------------------------------------------------
-WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'blk_mem_gen_0' instantiated as 'buffer' [D:/shuziluoji/bhw/work/code/camera_top.v:34]
-WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'clk_wiz_0' instantiated as 'div' [D:/shuziluoji/bhw/work/code/camera_top.v:24]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'blk_mem_gen_0' instantiated as 'buffer' [D:/shuziluoji/bhw/work/code/camera_top.v:43]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'clk_wiz_0' instantiated as 'div' [D:/shuziluoji/bhw/work/code/camera_top.v:31]
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [D:/shuziluoji/bhw/work/FPGA-cameral/FPGA-cameral.runs/synth_1/.Xil/Vivado-13704-DESKTOP-R5H3E9D/dcp/clk_wiz_0_in_context.xdc] for cell 'div'
-Finished Parsing XDC File [D:/shuziluoji/bhw/work/FPGA-cameral/FPGA-cameral.runs/synth_1/.Xil/Vivado-13704-DESKTOP-R5H3E9D/dcp/clk_wiz_0_in_context.xdc] for cell 'div'
-Parsing XDC File [D:/shuziluoji/bhw/work/FPGA-cameral/FPGA-cameral.runs/synth_1/.Xil/Vivado-13704-DESKTOP-R5H3E9D/dcp_2/blk_mem_gen_0_in_context.xdc] for cell 'buffer'
-Finished Parsing XDC File [D:/shuziluoji/bhw/work/FPGA-cameral/FPGA-cameral.runs/synth_1/.Xil/Vivado-13704-DESKTOP-R5H3E9D/dcp_2/blk_mem_gen_0_in_context.xdc] for cell 'buffer'
+Parsing XDC File [D:/shuziluoji/bhw/work/FPGA-cameral/FPGA-cameral.runs/synth_1/.Xil/Vivado-20220-DESKTOP-R5H3E9D/dcp/clk_wiz_0_in_context.xdc] for cell 'div'
+Finished Parsing XDC File [D:/shuziluoji/bhw/work/FPGA-cameral/FPGA-cameral.runs/synth_1/.Xil/Vivado-20220-DESKTOP-R5H3E9D/dcp/clk_wiz_0_in_context.xdc] for cell 'div'
+Parsing XDC File [D:/shuziluoji/bhw/work/FPGA-cameral/FPGA-cameral.runs/synth_1/.Xil/Vivado-20220-DESKTOP-R5H3E9D/dcp_2/blk_mem_gen_0_in_context.xdc] for cell 'buffer'
+Finished Parsing XDC File [D:/shuziluoji/bhw/work/FPGA-cameral/FPGA-cameral.runs/synth_1/.Xil/Vivado-20220-DESKTOP-R5H3E9D/dcp_2/blk_mem_gen_0_in_context.xdc] for cell 'buffer'
 Parsing XDC File [D:/shuziluoji/bhw/work/xdc/camera.xdc]
 Finished Parsing XDC File [D:/shuziluoji/bhw/work/xdc/camera.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/shuziluoji/bhw/work/xdc/camera.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/camera_top_propImpl.xdc].
@@ -90,25 +94,25 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 649.340 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.067 . Memory (MB): peak = 653.258 ; gain = 0.000
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'buffer' at clock pin 'clka' is different from the actual clock period '10.000', this can result in different synthesis results.
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 649.340 ; gain = 442.012
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:01:01 . Memory (MB): peak = 653.258 ; gain = 445.777
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 649.340 ; gain = 442.012
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:01:01 . Memory (MB): peak = 653.258 ; gain = 445.777
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  D:/shuziluoji/bhw/work/FPGA-cameral/FPGA-cameral.runs/synth_1/.Xil/Vivado-13704-DESKTOP-R5H3E9D/dcp/clk_wiz_0_in_context.xdc, line 4).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  D:/shuziluoji/bhw/work/FPGA-cameral/FPGA-cameral.runs/synth_1/.Xil/Vivado-13704-DESKTOP-R5H3E9D/dcp/clk_wiz_0_in_context.xdc, line 5).
+Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  D:/shuziluoji/bhw/work/FPGA-cameral/FPGA-cameral.runs/synth_1/.Xil/Vivado-20220-DESKTOP-R5H3E9D/dcp/clk_wiz_0_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  D:/shuziluoji/bhw/work/FPGA-cameral/FPGA-cameral.runs/synth_1/.Xil/Vivado-20220-DESKTOP-R5H3E9D/dcp/clk_wiz_0_in_context.xdc, line 5).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 649.340 ; gain = 442.012
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:01:01 . Memory (MB): peak = 653.258 ; gain = 445.777
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5546] ROM "data_out" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5544] ROM "sio_c" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
@@ -116,9 +120,10 @@ INFO: [Synth 8-5544] ROM "sio_c" won't be mapped to Block RAM because address si
 INFO: [Synth 8-5546] ROM "sio_c" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "data_temp" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "y_poi" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-327] inferring latch for variable 'oData_reg' [D:/shuziluoji/bhw/work/code/display7.v:7]
 WARNING: [Synth 8-327] inferring latch for variable 'ram_addr_reg' [D:/shuziluoji/bhw/work/code/vga_display.v:32]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 649.340 ; gain = 442.012
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:01:03 . Memory (MB): peak = 653.258 ; gain = 445.777
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -131,28 +136,49 @@ Start RTL Component Statistics
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   4 Input     32 Bit       Adders := 3     
+	   5 Input     32 Bit       Adders := 2     
 	   2 Input     21 Bit       Adders := 1     
 	   2 Input     19 Bit       Adders := 1     
+	   2 Input     15 Bit       Adders := 1     
 	   2 Input     12 Bit       Adders := 4     
 	   2 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   3 Input     10 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 3     
+	   3 Input      8 Bit       Adders := 3     
+	   2 Input      4 Bit       Adders := 1     
 +---Registers : 
 	               32 Bit    Registers := 1     
 	               21 Bit    Registers := 1     
 	               19 Bit    Registers := 1     
 	               16 Bit    Registers := 2     
+	               15 Bit    Registers := 1     
 	               12 Bit    Registers := 3     
 	               11 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
 	                2 Bit    Registers := 1     
-	                1 Bit    Registers := 4     
+	                1 Bit    Registers := 8     
++---Multipliers : 
+	                 2x32  Multipliers := 3     
+	                 8x32  Multipliers := 3     
 +---Muxes : 
 	   2 Input     32 Bit        Muxes := 2     
 	   2 Input     21 Bit        Muxes := 1     
+	   2 Input     15 Bit        Muxes := 1     
 	   2 Input     12 Bit        Muxes := 2     
-	   2 Input      4 Bit        Muxes := 6     
+	   2 Input      8 Bit        Muxes := 7     
+	   9 Input      7 Bit        Muxes := 1     
+	  10 Input      7 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   6 Input      7 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 7     
 	   3 Input      2 Bit        Muxes := 1     
 	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 8     
 	 178 Input      1 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 7     
 	   3 Input      1 Bit        Muxes := 2     
 	   5 Input      1 Bit        Muxes := 1     
 	   4 Input      1 Bit        Muxes := 2     
@@ -163,6 +189,29 @@ Finished RTL Component Statistics
 Start RTL Hierarchical Component Statistics 
 ---------------------------------------------------------------------------------
 Hierarchical RTL Component report 
+Module bluetooth 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     15 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               15 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     15 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module display7 
+Detailed RTL Component Info : 
++---Muxes : 
+	   9 Input      7 Bit        Muxes := 1     
+	  10 Input      7 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   6 Input      7 Bit        Muxes := 1     
 Module reg_init 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -197,6 +246,20 @@ Detailed RTL Component Info :
 	               12 Bit    Registers := 1     
 	                2 Bit    Registers := 1     
 	                1 Bit    Registers := 1     
+Module deal_pic 
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input     32 Bit       Adders := 3     
+	   5 Input     32 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 1     
+	   3 Input     10 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 3     
+	   3 Input      8 Bit       Adders := 3     
++---Multipliers : 
+	                 2x32  Multipliers := 3     
+	                 8x32  Multipliers := 3     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 6     
 Module vga_control 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -226,23 +289,34 @@ BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 649.340 ; gain = 442.012
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:18 ; elapsed = 00:01:04 . Memory (MB): peak = 653.258 ; gain = 445.777
 ---------------------------------------------------------------------------------
 Start Cross Boundary Optimization
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-5546] ROM "init/sender/sio_c" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "vga/control/y_poi" won't be mapped to RAM because it is too sparse
-DSP Report: Generating DSP vga/ram_addr1, operation Mode is: A*(B:0x280).
-DSP Report: operator vga/ram_addr1 is absorbed into DSP vga/ram_addr1.
-DSP Report: Generating DSP vga/ram_addr0, operation Mode is: PCIN+(A:0x0):B2+(C:0xffffffffff70).
-DSP Report: register vga/control/x_poi_reg is absorbed into DSP vga/ram_addr0.
-DSP Report: operator vga/ram_addr0 is absorbed into DSP vga/ram_addr0.
-WARNING: [Synth 8-3917] design camera_top has port reset driven by constant 1
-WARNING: [Synth 8-3917] design camera_top has port pwdn driven by constant 0
+INFO: [Synth 8-5546] ROM "sender/sio_c" won't be mapped to RAM because it is too sparse
+DSP Report: Generating DSP blue_mid1, operation Mode is: A*B.
+DSP Report: operator blue_mid1 is absorbed into DSP blue_mid1.
+DSP Report: Generating DSP blue_mid3, operation Mode is: (A:0x216)*B.
+DSP Report: operator blue_mid3 is absorbed into DSP blue_mid3.
+DSP Report: Generating DSP green_mid1, operation Mode is: A*B.
+DSP Report: operator green_mid1 is absorbed into DSP green_mid1.
+DSP Report: Generating DSP green_mid3, operation Mode is: (A:0x2ae)*B.
+DSP Report: operator green_mid3 is absorbed into DSP green_mid3.
+DSP Report: Generating DSP red_mid1, operation Mode is: A*B.
+DSP Report: operator red_mid1 is absorbed into DSP red_mid1.
+DSP Report: Generating DSP red_mid3, operation Mode is: (A:0x301)*B.
+DSP Report: operator red_mid3 is absorbed into DSP red_mid3.
+INFO: [Synth 8-5546] ROM "control/y_poi" won't be mapped to RAM because it is too sparse
+DSP Report: Generating DSP ram_addr1, operation Mode is: A*(B:0x280).
+DSP Report: operator ram_addr1 is absorbed into DSP ram_addr1.
+DSP Report: Generating DSP ram_addr0, operation Mode is: PCIN+(A:0x0):B2+(C:0xffffffffff70).
+DSP Report: register control/x_poi_reg is absorbed into DSP ram_addr0.
+DSP Report: operator ram_addr0 is absorbed into DSP ram_addr0.
+WARNING: [Synth 8-3331] design deal_pic has unconnected port clk
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:25 . Memory (MB): peak = 649.340 ; gain = 442.012
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:01:04 . Memory (MB): peak = 653.258 ; gain = 445.777
 ---------------------------------------------------------------------------------
-Finished Parallel Reinference  : Time (s): cpu = 00:00:20 ; elapsed = 00:00:25 . Memory (MB): peak = 649.340 ; gain = 442.012
+Finished Parallel Reinference  : Time (s): cpu = 00:00:18 ; elapsed = 00:01:04 . Memory (MB): peak = 653.258 ; gain = 445.777
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -254,19 +328,25 @@ Start ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 
 ROM:
-+------------+------------------------+---------------+----------------+
-|Module Name | RTL Object             | Depth x Width | Implemented As | 
-+------------+------------------------+---------------+----------------+
-|camera_top  | init/init/data_out_reg | 256x16        | Block RAM      | 
-+------------+------------------------+---------------+----------------+
++------------+-------------------+---------------+----------------+
+|Module Name | RTL Object        | Depth x Width | Implemented As | 
++------------+-------------------+---------------+----------------+
+|camera_init | init/data_out_reg | 256x16        | Block RAM      | 
++------------+-------------------+---------------+----------------+
 
 
 DSP: Preliminary Mapping  Report (see note below)
 +------------+------------------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
 |Module Name | DSP Mapping                        | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
 +------------+------------------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|deal_pic    | A*B                                | 16     | 8      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|deal_pic    | (A:0x216)*B                        | 8      | 10     | -      | -      | 18     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|deal_pic    | A*B                                | 16     | 8      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|deal_pic    | (A:0x2ae)*B                        | 8      | 10     | -      | -      | 18     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|deal_pic    | A*B                                | 16     | 8      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|deal_pic    | (A:0x301)*B                        | 8      | 10     | -      | -      | 18     | 0    | 0    | -    | -    | -     | 0    | 0    | 
 |vga_display | A*(B:0x280)                        | 19     | 10     | -      | -      | 29     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|camera_top  | PCIN+(A:0x0):B2+(C:0xffffffffff70) | 30     | 12     | 9      | -      | -1     | 0    | 1    | 0    | -    | -     | 0    | 0    | 
+|vga_display | PCIN+(A:0x0):B2+(C:0xffffffffff70) | 30     | 12     | 9      | -      | -1     | 0    | 1    | 0    | -    | -     | 0    | 0    | 
 +------------+------------------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
 
 Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
@@ -279,13 +359,6 @@ Start Area Optimization
 INFO: [Synth 8-3333] propagating constant 1 across sequential element (\init/sender/data_temp_reg[0] )
 INFO: [Synth 8-3886] merging instance 'init/sender/data_temp_reg[0]' (FDE) to 'init/sender/data_temp_reg[1]'
 INFO: [Synth 8-3333] propagating constant 1 across sequential element (\init/sender/data_temp_reg[1] )
-WARNING: [Synth 8-3332] Sequential element (vga/ram_addr_reg[18]) is unused and will be removed from module camera_top.
-WARNING: [Synth 8-3332] Sequential element (vga/ram_addr_reg[17]) is unused and will be removed from module camera_top.
-WARNING: [Synth 8-3332] Sequential element (vga/ram_addr_reg[16]) is unused and will be removed from module camera_top.
-WARNING: [Synth 8-3332] Sequential element (vga/ram_addr_reg[15]) is unused and will be removed from module camera_top.
-WARNING: [Synth 8-3332] Sequential element (vga/ram_addr_reg[14]) is unused and will be removed from module camera_top.
-WARNING: [Synth 8-3332] Sequential element (vga/ram_addr_reg[13]) is unused and will be removed from module camera_top.
-WARNING: [Synth 8-3332] Sequential element (vga/ram_addr_reg[12]) is unused and will be removed from module camera_top.
 WARNING: [Synth 8-3332] Sequential element (init/init/count_reg_rep[10]) is unused and will be removed from module camera_top.
 WARNING: [Synth 8-3332] Sequential element (init/init/count_reg_rep[9]) is unused and will be removed from module camera_top.
 WARNING: [Synth 8-3332] Sequential element (init/init/count_reg_rep[8]) is unused and will be removed from module camera_top.
@@ -293,9 +366,9 @@ WARNING: [Synth 8-3332] Sequential element (init/sender/data_temp_reg[1]) is unu
 WARNING: [Synth 8-3332] Sequential element (init/sender/data_temp_reg[0]) is unused and will be removed from module camera_top.
 WARNING: [Synth 8-3332] Sequential element (get_pic/rgb565_reg[11]) is unused and will be removed from module camera_top.
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:27 . Memory (MB): peak = 649.340 ; gain = 442.012
+Finished Area Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:01:14 . Memory (MB): peak = 653.258 ; gain = 445.777
 ---------------------------------------------------------------------------------
-Finished Parallel Area Optimization  : Time (s): cpu = 00:00:21 ; elapsed = 00:00:27 . Memory (MB): peak = 649.340 ; gain = 442.012
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:26 ; elapsed = 00:01:14 . Memory (MB): peak = 653.258 ; gain = 445.777
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -312,10 +385,10 @@ INFO: [Synth 8-5578] Moved timing constraint from pin 'div/clk_out1' to pin 'div
 INFO: [Synth 8-5578] Moved timing constraint from pin 'div/clk_out2' to pin 'div/bbstub_clk_out2/O'
 INFO: [Synth 8-5820] Moved 2 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:39 ; elapsed = 00:00:44 . Memory (MB): peak = 655.328 ; gain = 448.000
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:43 ; elapsed = 00:01:41 . Memory (MB): peak = 694.996 ; gain = 487.516
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:39 ; elapsed = 00:00:44 . Memory (MB): peak = 674.961 ; gain = 467.633
+Finished Timing Optimization : Time (s): cpu = 00:00:43 ; elapsed = 00:01:41 . Memory (MB): peak = 708.555 ; gain = 501.074
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -328,16 +401,16 @@ Start Technology Mapping
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-4480] The timing for the instance init/init/data_out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:39 ; elapsed = 00:00:45 . Memory (MB): peak = 682.805 ; gain = 475.477
+Finished Technology Mapping : Time (s): cpu = 00:00:45 ; elapsed = 00:01:43 . Memory (MB): peak = 734.844 ; gain = 527.363
 ---------------------------------------------------------------------------------
-Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:39 ; elapsed = 00:00:45 . Memory (MB): peak = 682.805 ; gain = 475.477
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:45 ; elapsed = 00:01:43 . Memory (MB): peak = 734.844 ; gain = 527.363
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
-Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:39 ; elapsed = 00:00:45 . Memory (MB): peak = 682.805 ; gain = 475.477
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:45 ; elapsed = 00:01:43 . Memory (MB): peak = 734.844 ; gain = 527.363
 ---------------------------------------------------------------------------------
 Start IO Insertion
 ---------------------------------------------------------------------------------
@@ -354,7 +427,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 682.805 ; gain = 475.477
+Finished IO Insertion : Time (s): cpu = 00:00:45 ; elapsed = 00:01:46 . Memory (MB): peak = 734.844 ; gain = 527.363
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -367,7 +440,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 682.805 ; gain = 475.477
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:45 ; elapsed = 00:01:47 . Memory (MB): peak = 734.844 ; gain = 527.363
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -379,25 +452,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 682.805 ; gain = 475.477
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:45 ; elapsed = 00:01:47 . Memory (MB): peak = 734.844 ; gain = 527.363
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 682.805 ; gain = 475.477
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:45 ; elapsed = 00:01:47 . Memory (MB): peak = 734.844 ; gain = 527.363
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 682.805 ; gain = 475.477
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:46 ; elapsed = 00:01:47 . Memory (MB): peak = 734.844 ; gain = 527.363
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 682.805 ; gain = 475.477
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:46 ; elapsed = 00:01:47 . Memory (MB): peak = 734.844 ; gain = 527.363
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -418,56 +491,64 @@ Report Cell Usage:
 |1     |blk_mem_gen_0 |     1|
 |2     |clk_wiz_0     |     1|
 |3     |BUFG          |     1|
-|4     |CARRY4        |    25|
-|5     |DSP48E1       |     1|
+|4     |CARRY4        |   253|
+|5     |DSP48E1       |     7|
 |6     |DSP48E1_1     |     1|
-|7     |LUT1          |    96|
-|8     |LUT2          |    30|
-|9     |LUT3          |    19|
-|10    |LUT4          |    26|
-|11    |LUT5          |    15|
-|12    |LUT6          |    35|
+|7     |LUT1          |   182|
+|8     |LUT2          |   479|
+|9     |LUT3          |   329|
+|10    |LUT4          |   381|
+|11    |LUT5          |   138|
+|12    |LUT6          |   236|
 |13    |RAMB18E1      |     1|
-|14    |XORCY         |     2|
-|15    |FDRE          |   154|
-|16    |FDSE          |    11|
-|17    |LD            |    12|
-|18    |IBUF          |    12|
-|19    |OBUF          |    18|
-|20    |OBUFT         |     1|
+|14    |XORCY         |    29|
+|15    |FDRE          |   178|
+|16    |FDSE          |    18|
+|17    |LD            |    19|
+|18    |LDC           |     6|
+|19    |LDP           |     1|
+|20    |IBUF          |    13|
+|21    |OBUF          |    25|
+|22    |OBUFT         |     1|
 +------+--------------+------+
 
 Report Instance Areas: 
 +------+------------+---------------+------+
 |      |Instance    |Module         |Cells |
 +------+------------+---------------+------+
-|1     |top         |               |   474|
-|2     |  get_pic   |camera_get_pic |    95|
-|3     |  init      |camera_init    |   165|
-|4     |    init    |reg_init       |    58|
-|5     |    sender  |sccb_sender    |   107|
-|6     |  vga       |vga_display    |   168|
-|7     |    control |vga_control    |   141|
+|1     |top         |               |  2312|
+|2     |  bt        |bluetooth      |   184|
+|3     |  deal      |deal_pic       |   338|
+|4     |  dis       |display7       |    19|
+|5     |  get_pic   |camera_get_pic |    95|
+|6     |  init      |camera_init    |   187|
+|7     |    init    |reg_init       |    54|
+|8     |    sender  |sccb_sender    |   133|
+|9     |  vga       |vga_display    |   163|
+|10    |    control |vga_control    |   129|
 +------+------------+---------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 682.805 ; gain = 475.477
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:46 ; elapsed = 00:01:47 . Memory (MB): peak = 734.844 ; gain = 527.363
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 16 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:31 . Memory (MB): peak = 682.805 ; gain = 139.539
-Synthesis Optimization Complete : Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 682.805 ; gain = 475.477
+Synthesis finished with 0 errors, 0 critical warnings and 9 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:33 ; elapsed = 00:01:01 . Memory (MB): peak = 734.844 ; gain = 188.910
+Synthesis Optimization Complete : Time (s): cpu = 00:00:46 ; elapsed = 00:01:48 . Memory (MB): peak = 734.844 ; gain = 527.363
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 54 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 330 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 14 instances were transformed.
-  (MUXCY,XORCY) => CARRY4: 2 instances
-  LD => LDCE: 12 instances
+  A total of 55 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 29 instances
+  LD => LDCE: 19 instances
+  LDC => LDCE: 6 instances
+  LDP => LDPE: 1 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-46 Infos, 25 Warnings, 0 Critical Warnings and 0 Errors encountered.
+53 Infos, 15 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 682.805 ; gain = 451.410
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.047 . Memory (MB): peak = 682.805 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Tue Feb 11 15:45:25 2020...
+synth_design: Time (s): cpu = 00:00:45 ; elapsed = 00:01:46 . Memory (MB): peak = 734.844 ; gain = 503.289
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.301 . Memory (MB): peak = 734.844 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sun Dec 13 20:29:15 2020...

@@ -11,6 +11,7 @@ set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_property webtalk.parent_dir D:/shuziluoji/bhw/work/FPGA-cameral/FPGA-cameral.cache/wt [current_project]
 set_property parent.project_path D:/shuziluoji/bhw/work/FPGA-cameral/FPGA-cameral.xpr [current_project]
+set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 add_files -quiet d:/shuziluoji/bhw/work/FPGA-cameral/FPGA-cameral.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp
@@ -21,6 +22,9 @@ read_verilog -library xil_defaultlib {
   D:/shuziluoji/bhw/work/code/sccb_sender.v
   D:/shuziluoji/bhw/work/code/reg_init.v
   D:/shuziluoji/bhw/work/code/vga_control.v
+  D:/shuziluoji/bhw/work/code/display7.v
+  D:/shuziluoji/bhw/work/code/deal_pic.v
+  D:/shuziluoji/bhw/work/code/bluetooth.v
   D:/shuziluoji/bhw/work/code/camera_init.v
   D:/shuziluoji/bhw/work/code/vga_display.v
   D:/shuziluoji/bhw/work/code/camera_get_pic.v

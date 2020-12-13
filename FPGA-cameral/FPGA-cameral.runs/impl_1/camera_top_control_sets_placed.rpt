@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
-| Date         : Tue Feb 11 15:46:18 2020
+| Date         : Sun Dec 13 20:31:01 2020
 | Host         : DESKTOP-R5H3E9D running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file camera_top_control_sets_placed.rpt
 | Design       : camera_top
@@ -22,8 +22,8 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |    12 |
-| Unused register locations in slices containing registers |    52 |
+| Number of unique control sets                            |    28 |
+| Unused register locations in slices containing registers |   141 |
 +----------------------------------------------------------+-------+
 
 
@@ -33,33 +33,49 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              18 |            8 |
+| No           | No                    | No                     |              46 |           25 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |              53 |           18 |
-| Yes          | No                    | No                     |              48 |           15 |
+| No           | Yes                   | No                     |              61 |           19 |
+| Yes          | No                    | No                     |              32 |           15 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |              61 |           17 |
+| Yes          | Yes                   | No                     |             104 |           34 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 3. Detailed Control Set Information
 -----------------------------------
 
-+--------------------+---------------------------+-------------------------------+------------------+----------------+
-|    Clock Signal    |       Enable Signal       |        Set/Reset Signal       | Slice Load Count | Bel Load Count |
-+--------------------+---------------------------+-------------------------------+------------------+----------------+
-|  div/inst/clk_out2 | init/sender/sio_c_i_2_n_0 | init/sender/sio_c             |                1 |              1 |
-|  div/inst/clk_out2 |                           |                               |                4 |              6 |
-|  div/inst/clk_out2 | init/sender/data_temp0    | rst_IBUF                      |                4 |             10 |
-|  vga/control/E[0]  |                           |                               |                4 |             12 |
-|  div/inst/clk_out1 |                           | rst_IBUF                      |                7 |             12 |
-|  div/inst/clk_out1 | vga/control/y_poi_0       | rst_IBUF                      |                2 |             12 |
-|  pclk_IBUF_BUFG    | get_pic/sel               | get_pic/clear                 |                5 |             19 |
-|  div/inst/clk_out2 | init/sender/E[0]          | rst_IBUF                      |                5 |             19 |
-|  div/inst/clk_out2 |                           | init/sender/count[20]_i_1_n_0 |                5 |             20 |
-|  div/inst/clk_out2 | init/sender/data_temp0    |                               |                4 |             20 |
-|  pclk_IBUF_BUFG    |                           | get_pic/clear                 |                6 |             21 |
-|  pclk_IBUF_BUFG    | vsync_IBUF                |                               |               11 |             28 |
-+--------------------+---------------------------+-------------------------------+------------------+----------------+
++---------------------------+---------------------------+-------------------------------+------------------+----------------+
+|        Clock Signal       |       Enable Signal       |        Set/Reset Signal       | Slice Load Count | Bel Load Count |
++---------------------------+---------------------------+-------------------------------+------------------+----------------+
+|  dis/oData_reg[1]_i_2_n_0 |                           | dis/oData_reg[1]_i_3_n_0      |                1 |              1 |
+|  clk_IBUF_BUFG            |                           | rst_IBUF                      |                1 |              1 |
+|  clk_IBUF_BUFG            | bt/p_0_in[0]              | rst_IBUF                      |                1 |              1 |
+|  clk_IBUF_BUFG            | bt/p_0_in[1]              | rst_IBUF                      |                1 |              1 |
+|  clk_IBUF_BUFG            | bt/p_0_in[2]              | rst_IBUF                      |                1 |              1 |
+|  clk_IBUF_BUFG            | bt/p_0_in[3]              | rst_IBUF                      |                1 |              1 |
+|  clk_IBUF_BUFG            | bt/p_0_in[4]              | rst_IBUF                      |                1 |              1 |
+|  clk_IBUF_BUFG            | bt/p_0_in[5]              | rst_IBUF                      |                1 |              1 |
+|  clk_IBUF_BUFG            | bt/p_0_in[6]              | rst_IBUF                      |                1 |              1 |
+|  clk_IBUF_BUFG            | bt/p_0_in[7]              | rst_IBUF                      |                1 |              1 |
+|  div/inst/clk_out2        | init/sender/sio_c_i_2_n_0 | init/sender/sio_c_0           |                1 |              1 |
+|  dis/oData_reg[6]_i_2_n_0 |                           | dis/oData_reg[6]_i_3_n_0      |                1 |              2 |
+|  dis/oData_reg[5]_i_2_n_0 |                           | bt/AR[0]                      |                2 |              4 |
+|  clk_IBUF_BUFG            | bt/count_20               | rst_IBUF                      |                1 |              4 |
+|  div/inst/clk_out2        | init/sender/data_temp0    |                               |                1 |              4 |
+|  div/inst/clk_out2        |                           |                               |                4 |              6 |
+|  div/inst/clk_out2        | init/sender/data_temp0    | init/init/data_temp_reg[3]    |                3 |             10 |
+|  div/inst/clk_out1        |                           | rst_IBUF                      |                5 |             12 |
+|  div/inst/clk_out1        | vga/control/y_poi_0       | rst_IBUF                      |                3 |             12 |
+|  clk_IBUF_BUFG            | bt/add_en                 | rst_IBUF                      |                4 |             15 |
+|  div/inst/clk_out2        | init/sender/data_temp0    | rst_IBUF                      |                4 |             16 |
+|  vga/control/E[0]         |                           |                               |                7 |             19 |
+|  pclk_IBUF_BUFG           | get_pic/sel               | get_pic/clear                 |                5 |             19 |
+|  div/inst/clk_out2        | init/sender/E[0]          | rst_IBUF                      |                5 |             19 |
+|  div/inst/clk_out2        |                           | init/sender/count[20]_i_1_n_0 |                4 |             20 |
+|  clk_IBUF_BUFG            |                           |                               |               14 |             21 |
+|  pclk_IBUF_BUFG           |                           | get_pic/clear                 |                5 |             21 |
+|  pclk_IBUF_BUFG           | vsync_IBUF                |                               |               14 |             28 |
++---------------------------+---------------------------+-------------------------------+------------------+----------------+
 
 

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="blk_mem_gen_0_synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1581406874">
-  <File Type="RDS-PROPCONSTRS" Name="blk_mem_gen_0_drc_synth.rpt"/>
   <File Type="PA-TCL" Name="blk_mem_gen_0.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="blk_mem_gen_0_drc_synth.rpt"/>
   <File Type="RDS-RDS" Name="blk_mem_gen_0.vds"/>
   <File Type="RDS-UTIL" Name="blk_mem_gen_0_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="blk_mem_gen_0_utilization_synth.pb"/>
@@ -35,9 +35,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>
